@@ -1,0 +1,3 @@
+Simple spring-data-jpa set of repositories, and jpa model objects to be used in a small spring boot command line utility used to ingest new drawers/cards/timeframes from a fairly strangly set up cdn. The database schema is set ups using only varchar elements, and the foreign key constraints aren't set to be locked until we complete the ingest and verify the data integrity, so they jpa models are admitadly a bit lacking in variety. 
+I started writing this because we're about to ingest several million more cards whose data was prepared by different vendors.
+ I figured having this functionality as a java app would prove more capable of handling the complexity of the different csv file format variants they'll be using for their cdn manifest files.
